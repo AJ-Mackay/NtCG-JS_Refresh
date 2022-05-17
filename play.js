@@ -1,6 +1,8 @@
-var name = 'Ash';
-var age = 37;
-var hasHobbies = true;
+const name = 'Ash';
+let age = 37;
+const hasHobbies = true;
+
+age = 38
 
 // console.log(name);
 
