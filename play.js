@@ -2,11 +2,11 @@ const name = 'Ash';
 let age = 37;
 const hasHobbies = true;
 
-age = 38
+age = 38;
 
 // console.log(name);
 
-function summariseUser(userName, userAge, userHasHobbies) {
+const summariseUser = (userName, userAge, userHasHobbies) => {
   return (
     'Name is ' +
     userName +
@@ -15,6 +15,14 @@ function summariseUser(userName, userAge, userHasHobbies) {
     ' and the user has hobbies: ' +
     userHasHobbies
   );
-}
+};
+
+// const add = (a, b) => a + b;
+// const addOne = (a) => a + 1;
+const addRandom = () => 1 + 2;
+
+// console.log(add(1, 2));
+// console.log(addOne(1));
+console.log(addRandom());
 
 console.log(summariseUser(name, age, hasHobbies));
