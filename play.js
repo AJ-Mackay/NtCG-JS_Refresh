@@ -27,30 +27,30 @@
 
 // console.log(summariseUser(name, age, hasHobbies));
 
-const person = {
-  name: 'Ash',
-  age: 37,
-  greet() {
-    console.log('Hi, I am ' + this.name);
-  },
-};
+// const person = {
+//   name: 'Ash',
+//   age: 37,
+//   greet() {
+//     console.log('Hi, I am ' + this.name);
+//   },
+// };
 
-const printName = ({ name }) => {
-  console.log(name);
-};
+// const printName = ({ name }) => {
+//   console.log(name);
+// };
 
-printName(person);
+// printName(person);
 
-const { name, age } = person;
-console.log(name, age);
+// const { name, age } = person;
+// console.log(name, age);
 
 // person.greet();
 // const copiedPerson = { ...person };
 // console.log(copiedPerson);
 
-const hobbies = ['Reading', 'Puzzles'];
-const [hobby1, hobby2] = hobbies;
-console.log(hobby1, hobby2);
+// const hobbies = ['Reading', 'Puzzles'];
+// const [hobby1, hobby2] = hobbies;
+// console.log(hobby1, hobby2);
 
 // for (let hobby of hobbies) {
 //   console.log(hobby);
@@ -66,3 +66,27 @@ console.log(hobby1, hobby2);
 // };
 
 // console.log(toArray(1, 2, 3, 4));
+
+const fetchData = () => {
+  const promise = new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve('Done!');
+    }, 1500);
+  });
+  return promise;
+};
+
+setTimeout(() => {
+  console.log('Timer is done!');
+  fetchData()
+    .then((text) => {
+      console.log(text);
+      return fetchData();
+    })
+    .then((text2) => {
+      console.log(text2);
+    });
+}, 2000);
+
+console.log('Hello!');
+console.log('Hi!');
