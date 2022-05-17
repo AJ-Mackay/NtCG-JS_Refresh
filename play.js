@@ -90,3 +90,8 @@ setTimeout(() => {
 
 console.log('Hello!');
 console.log('Hi!');
+
+const name = 'Ash';
+const age = 37;
+
+console.log(`My name is ${name} and I am ${age} years old.`);
