@@ -1,28 +1,38 @@
-const name = 'Ash';
-let age = 37;
-const hasHobbies = true;
+// const name = 'Ash';
+// let age = 37;
+// const hasHobbies = true;
 
-age = 38;
+// age = 38;
 
 // console.log(name);
 
-const summariseUser = (userName, userAge, userHasHobbies) => {
-  return (
-    'Name is ' +
-    userName +
-    ', age is ' +
-    userAge +
-    ' and the user has hobbies: ' +
-    userHasHobbies
-  );
-};
+// const summariseUser = (userName, userAge, userHasHobbies) => {
+//   return (
+//     'Name is ' +
+//     userName +
+//     ', age is ' +
+//     userAge +
+//     ' and the user has hobbies: ' +
+//     userHasHobbies
+//   );
+// };
 
 // const add = (a, b) => a + b;
 // const addOne = (a) => a + 1;
-const addRandom = () => 1 + 2;
+// const addRandom = () => 1 + 2;
 
 // console.log(add(1, 2));
 // console.log(addOne(1));
-console.log(addRandom());
+// console.log(addRandom());
 
-console.log(summariseUser(name, age, hasHobbies));
+// console.log(summariseUser(name, age, hasHobbies));
+
+const person = {
+  name: 'Ash',
+  age: 37,
+  greet() {
+    console.log('Hi, I am ' + this.name);
+  },
+};
+
+person.greet();
